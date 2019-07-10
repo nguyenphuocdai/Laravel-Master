@@ -1,0 +1,195 @@
+<!-- Header
+    ============================================= -->
+<header id="header">
+  <div class="container">
+    <div class="header-row">
+      <div class="header-column justify-content-start">
+        <!-- Logo
+            ============================= -->
+        <div class="logo">
+          <a
+            class="d-flex"
+            [routerLink]="['/home']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            href="javascript:void(0)"
+            title="Payyed - HTML Template"
+            ><img src="../../assets/images/logo.png" alt="Payyed"
+          /></a>
+        </div>
+        <!-- Logo end -->
+        <!-- Collapse Button
+            ============================== -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#header-nav"
+        >
+          <span></span> <span></span> <span></span></button
+        ><!-- Collapse Button end -->
+
+        <!-- Primary Navigation
+            ============================== -->
+        <nav class="primary-menu navbar navbar-expand-lg">
+          <div id="header-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li
+                [routerLink]="['/home']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a href="javascript:void(0)">Home</a>
+              </li>
+              <li
+                [routerLink]="['/dashboard']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a href="javascript:void(0)">Dashboard</a>
+              </li>
+              <li
+                [routerLink]="['/transactions']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a href="javascript:void(0)">Transactions</a>
+              </li>
+              <li
+                [routerLink]="['/send-money']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                [class]="isActiveSendRequestRouter()"
+              >
+                <a href="javascript:void(0)">Send/Request</a>
+              </li>
+              <li
+                [routerLink]="['/about']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a href="javascript:void(0)">About Us</a>
+              </li>
+              <li class="dropdown dropdown-mega">
+                <a class="dropdown-toggle" href="javascript:void(0)">Pages</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="dropdown-mega-content">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <span class="sub-title">Dashboard</span>
+                          <ul class="dropdown-mega-submenu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0)"
+                                [routerLink]="['/dashboard']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Dashboard</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0)"
+                                [routerLink]="['/transactions']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Transactions</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0)"
+                                [routerLink]="['/send-money']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Send Money</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0)"
+                                [routerLink]="['/request-money']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Request Money</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="sub-title">Account</span>
+                          <ul class="dropdown-mega-submenu">
+                            <li>
+                              <a class="dropdown-item" href="javascript:void(0)"
+                              [routerLink]="['/profile']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >My Profile</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="javascript:void(0)"
+                              [routerLink]="['/card-bank-account']"
+                              routerLinkActive="active"
+                              [routerLinkActiveOptions]="{ exact: true }"
+                                >Cards & Bank Accounts</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="javascript:void(0)"
+                              [routerLink]="['/notifications']"
+                              routerLinkActive="active"
+                              [routerLinkActiveOptions]="{ exact: true }"
+                                >Notifications</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Primary Navigation end -->
+      </div>
+
+      <div class="header-column justify-content-end">
+        <!-- Login & Signup Link
+            ============================== -->
+        <nav class="login-signup navbar navbar-expand">
+          <ul class="navbar-nav">
+            <li>
+              <a
+                href="javascript:void(0)"
+                [routerLink]="['/login']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Login</a
+              >
+            </li>
+            <li class="align-items-center h-auto ml-sm-3">
+              <a
+                class="btn btn-primary d-none d-sm-block"
+                href="javascript:void(0)"
+                [routerLink]="['/register']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Login & Signup Link end -->
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header End -->

@@ -1,0 +1,10 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+$owl-image-path: "~owl.carousel/src/img/";
+@import "./assets/css/stylesheet.css";
+
+
+.featured-box:not(.style-5) .featured-box-icon {
+    width: 100%;
+    text-align: center;
+}
